@@ -1,0 +1,4 @@
+index=windows (sourcetype="WinEventLog:Security" EventCode=4688 OR sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=1)
+(New_Process_Name="*powershell.exe" OR Image="*powershell.exe" OR Process_Command_Line="*powershell*" OR CommandLine="*powershell*")
+| table _time host user Account_Name Parent_Process_Name New_Process_Name Process_Command_Line ParentImage Image CommandLine
+| sort - _time

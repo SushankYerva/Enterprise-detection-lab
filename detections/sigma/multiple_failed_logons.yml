@@ -1,0 +1,22 @@
+title: Multiple Failed Windows Logons
+id: 2d36ff1f-6262-4f89-9b71-detection-lab-0001
+status: experimental
+description: Detects repeated failed logon attempts against a Windows host.
+author: Detection Lab
+date: 2026/05/31
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 4625
+  timeframe: 15m
+  condition: selection
+fields:
+  - TargetUserName
+  - IpAddress
+  - WorkstationName
+falsepositives:
+  - User password mistakes
+  - Misconfigured services
+level: medium

@@ -1,0 +1,4 @@
+index=zeek sourcetype=zeek:dns earliest=-24h
+| stats count dc(query) as unique_queries values(query) as sample_queries by id.orig_h
+| where count > 100 OR unique_queries > 50
+| sort - count

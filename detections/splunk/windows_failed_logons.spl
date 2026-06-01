@@ -1,0 +1,5 @@
+index=windows sourcetype="WinEventLog:Security" EventCode=4625 earliest=-24h
+| stats count min(_time) as first_seen max(_time) as last_seen values(src_ip) as source_ips by Account_Name, host
+| where count >= 5
+| convert ctime(first_seen) ctime(last_seen)
+| sort - count
