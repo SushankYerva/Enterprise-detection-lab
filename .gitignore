@@ -1,0 +1,23 @@
+# Secrets
+*.key
+*.pem
+*.pfx
+*.crt
+*.env
+.env
+secrets/
+credentials/
+passwords.txt
+
+# Splunk local/runtime files
+splunk/var/
+*.log
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Evidence that may contain sensitive data
+evidence/raw/
