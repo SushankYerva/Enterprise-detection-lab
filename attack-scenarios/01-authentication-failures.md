@@ -17,13 +17,3 @@ index=windows sourcetype="WinEventLog:Security" EventCode=4625
 | stats count by Account_Name, src_ip, host
 | sort - count
 ```
-
-## Evidence
-
-Attach:
-
-- Screenshot of failed login attempt
-- Screenshot of Splunk result
-- Timestamp
-- Hostname
-- Conclusion

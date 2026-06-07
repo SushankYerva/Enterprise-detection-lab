@@ -24,11 +24,3 @@ index=zeek sourcetype=zeek:conn earliest=-1h
 | where unique_ports > 20
 | sort - unique_ports
 ```
-
-## Evidence
-
-- Command timestamp
-- Source IP
-- Destination IP
-- Zeek/Splunk screenshot
-- Suricata screenshot if triggered

@@ -4,8 +4,6 @@
 
 The attacker VM is used only for controlled lab event generation.
 
-Do not use this system against networks or devices you do not own or have explicit permission to test.
-
 ## Safe Test Categories
 
 - ICMP connectivity checks

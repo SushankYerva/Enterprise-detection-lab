@@ -2,8 +2,6 @@
 
 A home SOC / detection engineering lab built around pfSense, Active Directory, Windows endpoint telemetry, Splunk, Zeek, Suricata, and an attacker VM.
 
-> This lab is for defensive security learning, detection engineering, logging, and incident response practice only.
-
 ## Lab Architecture
 
 ![Detection Lab Network](docs/network-diagram.png)
@@ -17,8 +15,8 @@ A home SOC / detection engineering lab built around pfSense, Active Directory, W
 | Active Directory | `192.168.1.10` | Domain Controller, DNS, authentication logs |
 | Splunk | `192.168.1.20` | SIEM/log analytics |
 | Windows 10 Endpoint | `192.168.1.100` | Domain-joined victim/workstation |
-| Zeek + Suricata | `TBD` | Network monitoring and IDS |
-| Attacker VM | `TBD` | Controlled testing VM |
+| Zeek + Suricata | `192.168.1.30` | Network monitoring and IDS |
+| Attacker VM | `192.168.1.250` | Controlled testing VM |
 
 ## Main Goals
 
@@ -66,26 +64,3 @@ A home SOC / detection engineering lab built around pfSense, Active Directory, W
 | Suricata IDS alert summary | Suricata `eve.json` | `detections/splunk/suricata_alert_summary.spl` |
 | Suspicious DNS activity | Zeek DNS logs | `detections/splunk/zeek_dns_suspicious.spl` |
 
-## Evidence Standard
-
-For every detection, capture:
-
-- Objective
-- Data source
-- Test performed
-- SPL/Sigma rule
-- Screenshot of alert/search result
-- False positives
-- Tuning logic
-- Final conclusion
-
-## Current Status
-
-- [ ] pfSense configured
-- [ ] Active Directory configured
-- [ ] Windows endpoint domain joined
-- [ ] Splunk installed
-- [ ] Windows logs forwarded
-- [ ] Zeek installed
-- [ ] Suricata installed
-- [ ] Detection scenarios completed

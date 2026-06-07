@@ -22,18 +22,6 @@
 7. Create a GPO for audit policy.
 8. Link the GPO to the Workstations OU.
 
-## Recommended Audit Events
-
-| Event ID | Meaning |
-|---:|---|
-| 4624 | Successful logon |
-| 4625 | Failed logon |
-| 4688 | Process creation |
-| 4672 | Special privileges assigned |
-| 4720 | User account created |
-| 4726 | User account deleted |
-| 4732 | Member added to local group |
-
 ## Validation
 
 ```powershell

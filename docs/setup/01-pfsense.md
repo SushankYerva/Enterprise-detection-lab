@@ -26,7 +26,3 @@ ping 192.168.1.1
 ping 8.8.8.8
 nslookup google.com
 ```
-
-## Notes
-
-Do not expose lab services directly to the internet unless you know exactly what you are doing.

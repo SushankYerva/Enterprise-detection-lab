@@ -26,9 +26,3 @@ index=windows EventCode=4688 powershell
 | table _time host Account_Name New_Process_Name Process_Command_Line
 | sort - _time
 ```
-
-## Evidence
-
-- `auditpol` screenshot
-- PowerShell command screenshot
-- Splunk result screenshot
