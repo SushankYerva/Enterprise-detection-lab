@@ -1,3 +1,3 @@
-index=suricata sourcetype=suricata:eve event_type=alert earliest=-24h
+index="mydfir-detect" sourcetype=suricata event_type=alert earliest=-24h
 | stats count values(alert.signature) as signatures values(alert.category) as categories by src_ip dest_ip proto
 | sort - count
