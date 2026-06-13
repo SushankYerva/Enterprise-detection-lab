@@ -18,6 +18,8 @@ A home SOC / detection engineering lab built around pfSense, Active Directory, W
 | Zeek + Suricata | `192.168.1.30` | Network monitoring and IDS |
 | Attacker VM | `192.168.1.250` | Controlled testing VM |
 
+Note: All IP shown above are examples and not from real lab enviornment.
+
 ## Main Goals
 
 - Build a realistic mini-enterprise network.
