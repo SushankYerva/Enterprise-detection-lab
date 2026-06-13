@@ -1,6 +1,7 @@
 # Detection Lab
 
 A home SOC / detection engineering lab built around pfSense, Active Directory, Windows endpoint telemetry, Splunk, Zeek, Suricata, and an attacker VM.
+
 Note: All IPs shown below are examples and not from real lab enviornment.
 ## Lab Architecture
 
